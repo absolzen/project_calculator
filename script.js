@@ -58,3 +58,11 @@ const clear = document.querySelector('.other.clear');
 const equals = document.querySelector('.other.equals');
 
 const display = document.querySelector('.display');
+
+one.addEventListener('click', () => {
+  if (display.textContent === '0') {
+    display.textContent = 1;
+  } else {
+    display.textContent += 1;
+  }
+  });
