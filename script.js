@@ -56,3 +56,5 @@ const slash = document.querySelector('.sign.slash');
 
 const clear = document.querySelector('.other.clear');
 const equals = document.querySelector('.other.equals');
+
+const display = document.querySelector('.display');
