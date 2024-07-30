@@ -59,7 +59,8 @@ const equals = document.querySelector('.other.equals');
 
 const display = document.querySelector('.display');
 
-one.addEventListener('click', () => {
+one.addEventListener('click', (e) => {
+  console.log(e);
   if (display.textContent === '0') {
     display.textContent = one.textContent;
   } else {
