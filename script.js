@@ -61,8 +61,8 @@ const display = document.querySelector('.display');
 
 one.addEventListener('click', () => {
   if (display.textContent === '0') {
-    display.textContent = 1;
+    display.textContent = one.textContent;
   } else {
-    display.textContent += 1;
+    display.textContent += one.textContent;
   }
   });
