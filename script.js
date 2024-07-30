@@ -38,6 +38,9 @@ function operate(sign, n1, n2) {
   }
 }
 
+
+const btn = document.querySelectorAll('.digit');
+
 const one = document.querySelector('.digit.one');
 const two = document.querySelector('.digit.two');
 const three = document.querySelector('.digit.three');
@@ -59,11 +62,13 @@ const equals = document.querySelector('.other.equals');
 
 const display = document.querySelector('.display');
 
-one.addEventListener('click', (e) => {
-  console.log(e);
-  if (display.textContent === '0') {
-    display.textContent = one.textContent;
-  } else {
-    display.textContent += one.textContent;
-  }
+// populate display with clicked numbers
+btn.forEach((item) => {
+  item.addEventListener('click', () => {
+    if (display.textContent === '0') {
+      display.textContent = item.textContent;
+    } else {
+      display.textContent += item.textContent;
+    }
   });
+});
